@@ -53,6 +53,7 @@ body {
 
 .hero h2 {
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .content-box {
@@ -92,7 +93,12 @@ footer {
   color: white;
 }
 
-footer i {
+footer a {
+  color: white;
+  text-decoration: none;
   margin: 0 5px;
+}
+
+footer i {
   font-size: 1.2em;
 }
