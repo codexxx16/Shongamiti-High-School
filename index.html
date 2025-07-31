@@ -1,106 +1,72 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shongamiti High School</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    #loader {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      background: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-    #loader.hidden {
-      display: none;
-    }
-    .typing-svg {
-      font-size: 2rem;
-      font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid #333;
-      width: 0;
-      animation: typing 4s steps(40, end) forwards, blink 1s infinite;
-    }
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-    @keyframes blink {
-      0%, 100% { border-color: transparent; }
-      50% { border-color: #333; }
-    }
-    footer {
-      background-color: rgba(0, 51, 102, 0.9);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    footer .socials a {
-      color: white;
-      margin: 0 10px;
-      font-size: 1.5rem;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="loader">
-    <h2>Loading Shongamiti High School...</h2>
-  </div>  <header>
-    <nav>
-      <h1>Shongamiti High School</h1>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#academics">Academics</a></li>
-        <li><a href="#admissions">Admissions</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <img src="https://files.catbox.moe/2dvsbb.jpg" alt="School Logo" class="school-logo" />
+    <h1>Shongamiti High School</h1>
+  </header>
+
+  <!-- SWIPEABLE NAVBAR -->
+  <div class="nav-wrapper">
+    <nav class="scrolling-nav">
+      <a href="#about">About Us</a>
+      <a href="#academics">Academics</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Reviews</a>
     </nav>
-  </header>  <section class="hero">
-    <div class="typing-svg">Empowering Future Leaders at Shongamiti High</div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Empowering Future |</h2>
     <p>Education is the key to unlocking the golden door of freedom.</p>
-  </section>  <section id="about">
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="content-box">
     <h2>About Us</h2>
-    <p>Welcome to Shongamiti High School, where academic excellence meets strong moral values.</p>
-  </section>  <section id="academics">
-    <h2>Academics</h2>
-    <p>We offer a rich curriculum from Form 1 to Form 6, focusing on science, commerce, and arts.</p>
-  </section>  <section id="admissions">
-    <h2>Online Enrollment</h2>
-    <form id="enrollmentForm">
-      <input type="text" placeholder="Student Full Name" required />
-      <input type="text" placeholder="Grade Level (Form 1 - Form 6)" required />
-      <input type="email" placeholder="Parent Email" required />
-      <button type="submit">Submit Enrollment</button>
-    </form>
-  </section>  <section id="payment">
-    <h2>School Fees Payment</h2>
-    <p>Use PayFast or PayPal to securely pay school fees online.</p>
-    <button onclick="alert('Redirecting to payment gateway...')">Pay Now</button>
-  </section>  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: admin@shongamitischool.org<br />Phone: +27 64 270 1608</p>
-  </section>  <footer>
-    <p>My number: +27742820156</p>
-    <p>&copy; 2025-2030 Shongamiti High School. All rights reserved.</p>
-    <p>Follow us here:</p>
-    <div class="socials">
-      <a href="https://www.tiktok.com/@16ixtxxn_tentacion?_t=ZS-8yUHgytDOL9&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
-      <a href="https://www.facebook.com/share/1HafLrNdR6/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
+    <p>Welcome to Shongamiti High School, where we strive for excellence.</p>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="reviews">
+    <h2>Recent Student Testimonials</h2>
+
+    <div class="review-card">
+      <img src="https://via.placeholder.com/80" alt="Student Photo">
+      <p>"Shongamiti taught me how to lead with confidence. The teachers are amazing and they know their aim..for you to pass"</p>
+      <strong>— Anesu Dzingai., Class of 2023</strong>
     </div>
-  </footer>  <script>
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loader");
-      loader.classList.add("hidden");
-    });
-  </script>  <script src="script.js"></script></body>
-      </html>
+
+    <div class="review-card">
+      <img src="https://via.placeholder.com/80" alt="Student Photo">
+      <p>"I’ll never forget my time here. It shaped my future in a big way.Each subjecthas its hero for exapmle Mr Muperi in chemistry."</p>
+      <strong>— Farai Mlauzi., Class of 2024</strong>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Developer Business Number</p>: +27742820156</p>
+    <p>Copyright ©️ 2025–2030</p>
+    <p>All rights reserved</p>
+    <p>Follow us here:
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </p>
+  </footer>
+
+</body>
+</html>
